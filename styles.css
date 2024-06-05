@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    justify-content: flex-end;
+    z-index: 10;
+    padding: 10px 0;
+    background: #3C5B6F;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+    list-style: none;
+}
+
+.nav-list a {
+    padding: 1.5rem;
+    text-decoration: none;
+    color: #DFD0B8;
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #153448;
+}
+
+.welcome-section h1 {
+    color: #DFD0B8;
+    font-size: 3.5rem;
+}
+
+.welcome-section p{
+    color: #948979;
+    font-size: 1.3rem;
+}
+
+.projects-section {
+    text-align: center;
+    height: 100vh;
+    background: #153448;
+    padding: 3rem 3rem;
+}
+
+.projects-section h2 {
+    color: #DFD0B8;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.project-containers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.img-project {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover; 
+    border-radius: .5rem;
+}
+
+
+.project-containers a p {
+    color: #153448;
+    background: #DFD0B8;
+    padding: .8rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: .5rem;
+}
+
+.project-btn {
+    color: #153448;
+    background: #DFD0B8;
+    padding: .8rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: .5rem;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+    background: #153448;
+}
+
+.contact-header h2 {
+    color: #DFD0B8;
+    font-size: 3rem;
+    padding: 0 2rem 2rem 2rem;
+}
+
+.contact-header p {
+    color: #DFD0B8;
+    font-size: 1.5rem;
+    padding-bottom:2rem;
+}
+
+.contact-links {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-links a {
+    padding: 1rem;
+    color: #948979;
+}
+
+.contact-links i {
+    color: #DFD0B8;
+    font-size: 2rem;
+    padding: .5rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    background: #3C5B6F;
+    padding: 2rem;
+    width: 100%;
+}
+
+footer p {
+    padding: .5rem;
+    color: #DFD0B8;
+}
+
+@media (max-width: 380px) {
+    .contact-links {
+      height: 100vh
+    }
+  }
